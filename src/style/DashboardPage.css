@@ -1,0 +1,70 @@
+/* Container chính chứa toàn bộ nội dung bên phải Sidebar */
+.dashboard-main-content {
+    padding: 24px;
+    background-color: var(--grey); /* Sử dụng màu nền từ global.css */
+    height: calc(100vh - 56px);
+    font-family: var(--poppins); /* */
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.welcome-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--dark); /* */
+    text-transform: uppercase;
+}
+
+/* Bố cục 4 thẻ thống kê phía trên */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Bố cục chia đôi cho Biểu đồ và Bảng */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Biểu đồ chiếm nhiều không gian hơn */
+    gap: 20px;
+    flex: 1;          /* Chiếm toàn bộ phần không gian còn lại sau stats-row */
+    min-height: 0;    /* Ép các thành phần con phải co lại theo Grid, không được phình ra */
+    margin-bottom: 20px; /* Cách đáy đúng 20px như bạn muốn */
+}
+
+.chart-section-wrapper {
+    height: 100%;     /* Luôn cao bằng Grid */
+    display: flex;
+    flex-direction: column;
+    background: var(--light);
+    padding: 20px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 8px;
+}
+
+.chart-section-wrapper div:last-child {
+    flex: 1;
+    min-height: 0;
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--dark); /* */
+    display: flex;
+    align-items: center;
+}
+
+.chart-title::before {
+    content: "";
+    width: 4px;
+    height: 20px;
+    background-color: var(--blue); /* */
+    margin-right: 12px;
+    border-radius: 4px;
+}

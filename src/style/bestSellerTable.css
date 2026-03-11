@@ -1,0 +1,92 @@
+.table-wrapper {
+    background: var(--light);
+    padding: 15px;
+    border: 1px solid var(--dark-grey);
+}
+
+.table-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark); /* */
+    display: flex;
+    align-items: center;
+}
+
+.table-title::before {
+    content: "";
+    width: 4px;
+    height: 20px;
+    background-color: var(--blue); /* */
+    margin-right: 12px;
+    border-radius: 4px;
+}
+
+.table-scroll-container {
+    flex: 1;
+    overflow-y: auto; /* Chỉ cho phép lăn chuột bên trong ô này */
+    margin-top: 15px;
+}
+
+.bestseller-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bestseller-table th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #f8f9fa; /* Màu nền xám cực nhẹ */
+    color: var(--dark); /* */
+    border-bottom: 2px solid var(--blue); /* Vạch xanh dưới header */
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--poppins); /* */
+}
+
+.bestseller-table th:nth-child(1), 
+.bestseller-table td:nth-child(1) { width: 120px; }
+
+.bestseller-table td:nth-child(2) {
+    max-width: 420px;           /* Độ rộng tối đa bạn cho phép */
+    white-space: nowrap;        /* Không cho phép xuống dòng */
+    overflow: hidden;           /* Ẩn phần văn bản bị thừa */
+    text-overflow: ellipsis;    /* Thêm dấu ba chấm "..." ở cuối */
+    
+    /* Để người dùng vẫn đọc được tên đầy đủ khi di chuột vào */
+    cursor: help;
+}
+
+.bestseller-table th:nth-child(3), 
+.bestseller-table td:nth-child(3) { width: 200px; }
+
+.bestseller-table td {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0; /* Đường kẻ hàng mờ */
+    border-right: none;
+    border-left: none;  
+}
+
+.bestseller-table tbody tr:hover {
+    background-color: var(--light-blue); /* */
+    transition: background-color 0.2s ease;
+}
+
+.table-section-wrapper {
+    height: 100%;     /* Ép cao bằng grid */
+    display: flex;
+    flex-direction: column;
+    background: var(--light);
+    padding: 20px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 8px;
+    overflow: hidden; /* Không cho nội dung bảng đẩy cả wrapper dài ra */
+}
+
+.bestseller-table {
+    width: 100%; /* Luôn dãn hết khung */
+    border-collapse: collapse;
+    margin-top: 10px;
+}

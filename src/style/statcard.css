@@ -1,0 +1,28 @@
+.stat-card {
+    background: var(--light); /* Sử dụng biến màu từ global.css */
+    padding: 20px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.stat-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 0;
+}
+
+.stat-value.text-center {
+    text-align: center;
+    font-size: 24px;
+    display: block;
+}

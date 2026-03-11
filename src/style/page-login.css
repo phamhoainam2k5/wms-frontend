@@ -1,0 +1,12 @@
+.login-page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--grey); /* Màu nền xám nhạt như hình */
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
