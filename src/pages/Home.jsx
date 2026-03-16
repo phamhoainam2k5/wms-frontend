@@ -23,6 +23,7 @@ function Home() {
         { id: '100001', name: 'SỮA TƯƠI VINAMILK', category: 'GIẢI KHÁT' },
         { id: '100002', name: 'MÌ HẢO HẢO TÔM CHUA CAY', category: 'THỰC PHẨM KHÔ' },
         { id: '100003', name: 'NƯỚC RỬA CHÉN SUNLIGHT SIÊU SẠCH 500ML + BỌT BIỂN RỬA BÁT*1', category: 'HÓA MỸ PHẨM' },
+        { id: '100003', name: 'NƯỚC RỬA CHÉN SUNLIGHT SIÊU SẠCH 500ML + BỌT BIỂN RỬA BÁT*1', category: 'HÓA MỸ PHẨM' },
     ];
 
     return (

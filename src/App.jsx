@@ -4,6 +4,7 @@ import "./style/global.css"
 
 import Home from "./pages/Home"
 import Login from "./pages/Login"
+import ImportReport from "./pages/importReport";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/" element={<Login />} />
 
         <Route path="/home" element={<Home />} />
+
+        <Route path="/importReport" element={<ImportReport />} />
       </Routes>
     </Router>
   );
